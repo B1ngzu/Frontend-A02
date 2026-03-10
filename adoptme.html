@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <title>แจ้งความสนใจรับอุปการะสุนัข</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            background-color: #fffaf3;
+        }
+        .form-box {
+            background-color: white;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            padding: 25px;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>แจ้งความสนใจรับอุปการะสุนัข</h1>
+    <a href="index.html">กลับหน้าหลัก</a>
+    <hr>
+
+    <div class="form-box">
+        <form action="#" method="POST" onsubmit="return validateForm()">
+
+            <h3>1. ข้อมูลส่วนตัว</h3>
+
+            <label for="fullname">ชื่อ - นามสกุล</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="ชื่อ นามสกุล" size="40"><br><br>
+
+            <label for="phone">เบอร์ติดต่อ</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="0xx-xxx-xxxx" size="40"><br><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="example@email.com" size="40"><br><br>
+
+            <h3>2. สิ่งแวดล้อมในการเลี้ยงดู</h3>
+
+            <label for="address">ที่อยู่</label><br>
+            <textarea id="address" name="address" rows="3" cols="45" placeholder="กรอกที่อยู่"></textarea><br><br>
+
+            <label for="housing">ลักษณะที่พักอาศัย</label><br>
+            <select id="housing" name="housing">
+                <option value="" disabled selected>-- เลือกลักษณะที่พัก --</option>
+                <option value="garden">บ้านสวน</option>
+                <option value="detached">บ้านเดี่ยว</option>
+                <option value="townhome">บ้านทาวน์โฮม</option>
+                <option value="condo">คอนโดมิเนียม / หอพัก</option>
+            </select><br><br>
+
+            <label>สถานที่เลี้ยงสุนัข</label><br>
+            <input type="radio" id="indoor" name="dog_location" value="indoor">
+            <label for="indoor">เลี้ยงสุนัขภายในบ้าน</label>
+            <input type="radio" id="outdoor" name="dog_location" value="outdoor">
+            <label for="outdoor">เลี้ยงสุนัขภายนอกบ้าน</label><br><br>
+
+            <label for="current_pets">จำนวนสัตว์เลี้ยงที่มีอยู่ปัจจุบัน</label><br>
+            <input type="number" id="current_pets" name="current_pets" min="0" value="0"><br><br>
+
+            <input type="checkbox" id="agree" name="agree">
+            <label for="agree">การส่งแบบฟอร์มนี้เป็นการแจ้งความสนใจ โดยไม่รับรองการได้รับอุปการะสุนัข</label><br><br>
+
+            <input type="submit" value="ส่งแบบฟอร์ม">
+
+        </form>
+    </div>
+
+    <hr>
+    <p style="text-align:center;">6833068121 Napaphon Charuthum</p>
+
+    <script src="adoptme.js"></script>
+
+</body>
+</html>
